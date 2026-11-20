@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PPDB TK KEMALA BHAYANGKARI 62 TALAGA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="topbar"></header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>PPDB TK KEMALA BHAYANGKARI 62 TALAGA</h1>
+      <p>Penerimaan Peserta Didik Baru Tahun Ajaran <strong id="heroTahun">-</strong>. Daftarkan putra-putri Anda secara online, pantau proses verifikasi, dan lihat hasil seleksi dari rumah.</p>
+      <span id="statusBuka" class="badge badge-gray">Memuat...</span>
+    </section>
+
+    <div class="grid grid-2">
+      <section class="card">
+        <div class="tabs">
+          <button type="button" class="tab-btn active" data-tab="login">Masuk</button>
+          <button type="button" class="tab-btn" data-tab="register">Daftar Akun Orang Tua</button>
+        </div>
+
+        <div id="panelLogin">
+          <div id="loginAlert" class="alert hidden"></div>
+          <form id="loginForm" autocomplete="on">
+            <div class="form-grid">
+              <div class="form-group full">
+                <label class="req" for="loginUsername">Username</label>
+                <input type="text" id="loginUsername" autocomplete="username" required>
+              </div>
+              <div class="form-group full">
+                <label class="req" for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" autocomplete="current-password" required>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-block" id="btnLogin">Masuk</button>
+            </div>
+          </form>
+          <p class="help mt">Guru dan admin masuk dengan akun yang dibuat sekolah. Orang tua silakan membuat akun terlebih dahulu.</p>
+        </div>
+
+        <div id="panelRegister" class="hidden">
+          <div id="registerAlert" class="alert hidden"></div>
+          <form id="registerForm" autocomplete="off">
+            <div class="form-grid">
+              <div class="form-group full">
+                <label class="req" for="regNama">Nama lengkap orang tua/wali</label>
+                <input type="text" id="regNama" maxlength="100" required>
+              </div>
+              <div class="form-group full">
+                <label class="req" for="regHp">Nomor HP/WhatsApp</label>
+                <input type="tel" id="regHp" inputmode="numeric" maxlength="14" placeholder="081234567890" required>
+              </div>
+              <div class="form-group full">
+                <label class="req" for="regUsername">Username</label>
+                <input type="text" id="regUsername" maxlength="20" autocapitalize="none" required>
+                <span class="help">4-20 karakter: huruf kecil, angka, atau underscore</span>
+              </div>
+              <div class="form-group">
+                <label class="req" for="regPassword">Password</label>
+                <input type="password" id="regPassword" minlength="6" autocomplete="new-password" required>
+              </div>
+              <div class="form-group">
+                <label class="req" for="regPassword2">Ulangi password</label>
+                <input type="password" id="regPassword2" minlength="6" autocomplete="new-password" required>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-accent btn-block" id="btnRegister">Buat Akun</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-title"><h2>Informasi Pendaftaran</h2></div>
+        <dl style="margin:0" id="infoList">
+          <div class="empty">Memuat informasi...</div>
+        </dl>
+        <h3 class="mt">Kuota Penerimaan</h3>
+        <div id="kuotaList" class="grid grid-2"></div>
+      </section>
+    </div>
+
+    <h2 class="mt">Alur Pendaftaran</h2>
+    <section class="steps mb">
+      <div class="step">
+        <div class="step-no">1</div>
+        <h3>Buat Akun</h3>
+        <p class="muted small mb-0">Orang tua/wali membuat akun dengan nomor HP yang aktif.</p>
+      </div>
+      <div class="step">
+        <div class="step-no">2</div>
+        <h3>Isi Formulir</h3>
+        <p class="muted small mb-0">Lengkapi data calon peserta didik, ayah, ibu, dan wali, lalu unggah Akta Kelahiran dan Kartu Keluarga.</p>
+      </div>
+      <div class="step">
+        <div class="step-no">3</div>
+        <h3>Verifikasi Guru</h3>
+        <p class="muted small mb-0">Guru memeriksa data. Jika ada yang kurang, Anda diminta memperbaiki.</p>
+      </div>
+      <div class="step">
+        <div class="step-no">4</div>
+        <h3>Hasil Seleksi</h3>
+        <p class="muted small mb-0">Hasil diumumkan di akun Anda dan bukti pendaftaran dapat dicetak.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>PPDB TK Kemala Bhayangkari 62 Talaga</div>
+    <div id="footAlamat"></div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

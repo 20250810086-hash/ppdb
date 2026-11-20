@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guru - PPDB TK KEMALA BHAYANGKARI 62 TALAGA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="topbar"></header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Verifikasi Pendaftar</h1>
+      <p>Selamat datang, <strong id="namaUser"></strong>. Periksa kelengkapan data calon peserta didik, lalu tandai terverifikasi atau minta perbaikan kepada orang tua.</p>
+      <button type="button" class="btn btn-light" id="btnPassword">Ubah Password</button>
+    </section>
+
+    <section class="grid grid-4 mb" id="statGrid"></section>
+
+    <section class="card">
+      <div class="card-title"><h2>Daftar Pendaftar</h2><span class="muted small" id="jumlahTampil"></span></div>
+      <div class="toolbar">
+        <input type="search" id="cari" placeholder="Cari nama anak, orang tua, atau nomor">
+        <select id="filterStatus">
+          <option value="">Semua status verifikasi</option>
+          <option value="Menunggu Verifikasi">Menunggu Verifikasi</option>
+          <option value="Perlu Perbaikan">Perlu Perbaikan</option>
+          <option value="Terverifikasi">Terverifikasi</option>
+        </select>
+      </div>
+      <div id="tabelWrap"><div class="empty">Memuat data...</div></div>
+    </section>
+  </main>
+
+  <footer class="footer">PPDB TK Kemala Bhayangkari 62 Talaga</footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/detail.js"></script>
+  <script src="js/guru.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orang Tua - PPDB TK KEMALA BHAYANGKARI 62 TALAGA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="topbar" class="no-print"></header>
+
+  <main class="container">
+    <div id="viewList">
+      <section class="hero">
+        <h1>Halo, <span id="namaUser"></span></h1>
+        <p id="heroInfo">Memuat informasi pendaftaran...</p>
+        <div class="flex flex-wrap">
+          <button type="button" class="btn btn-accent" id="btnDaftar">+ Daftarkan Anak</button>
+          <button type="button" class="btn btn-light" id="btnPassword">Ubah Password</button>
+        </div>
+      </section>
+      <div id="infoAlert" class="alert hidden"></div>
+      <h2>Pendaftaran Saya</h2>
+      <div id="listWrap"><div class="empty">Memuat data...</div></div>
+    </div>
+
+    <div id="viewForm" class="hidden">
+      <section class="card">
+        <div class="card-title">
+          <h2 id="formTitle">Formulir Pendaftaran</h2>
+          <button type="button" class="btn btn-outline btn-sm" id="btnBatalAtas">Kembali</button>
+        </div>
+        <div id="formAlert" class="alert hidden"></div>
+        <form id="pendaftaranForm" novalidate>
+          <div class="form-grid" id="formFields"></div>
+          <div class="form-actions">
+            <button type="submit" class="btn" id="btnSubmit">Kirim Pendaftaran</button>
+            <button type="button" class="btn btn-outline" id="btnBatal">Batal</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <div id="viewDetail" class="hidden">
+      <div class="flex flex-wrap mb no-print">
+        <button type="button" class="btn btn-outline" id="btnKembali">&larr; Kembali</button>
+        <button type="button" class="btn btn-accent" id="btnCetak">Cetak Bukti</button>
+        <button type="button" class="btn" id="btnEditDetail">Perbaiki Data</button>
+      </div>
+      <div id="detailWrap"></div>
+    </div>
+  </main>
+
+  <footer class="footer no-print">PPDB TK Kemala Bhayangkari 62 Talaga</footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/ortu.js"></script>
+</body>
+</html>

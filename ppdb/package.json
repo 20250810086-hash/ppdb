@@ -1,0 +1,10 @@
+{
+  "name": "ppdb-tk-kemala-bhayangkari-62",
+  "version": "1.0.0",
+  "description": "PPDB TK KEMALA BHAYANGKARI 62 TALAGA",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC"
+}
